@@ -1,0 +1,73 @@
+/* dashboard/styles.css
+   Shared visual styling for the AI-Assisted QoS-Aware MANET Dashboard.
+   Uses currentColor / theme-aware backgrounds where possible so it reads
+   well in both Streamlit's light and dark themes. */
+
+.manet-header {
+    padding: 0.5rem 0 1rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    margin-bottom: 1.25rem;
+}
+
+.manet-header h1 {
+    margin-bottom: 0.15rem;
+    font-size: 1.9rem;
+}
+
+.manet-header p {
+    opacity: 0.75;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.status-pill {
+    display: inline-block;
+    padding: 0.18rem 0.65rem;
+    border-radius: 999px;
+    color: #0b0b0b;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.disaster-card {
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 0.6rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.6rem;
+    background: rgba(128, 128, 128, 0.06);
+}
+
+.disaster-card-title {
+    font-weight: 700;
+    font-size: 1.02rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.disaster-card-meta {
+    opacity: 0.8;
+    font-size: 0.85rem;
+    margin-top: 0.35rem;
+}
+
+.section-card {
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: rgba(128, 128, 128, 0.04);
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 1.5rem;
+}
+
+div[data-testid="stMetric"] {
+    background: rgba(128, 128, 128, 0.06);
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.8rem;
+}

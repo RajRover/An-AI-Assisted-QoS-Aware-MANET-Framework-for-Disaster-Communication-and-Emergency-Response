@@ -1,0 +1,31 @@
+# ── Byte-compiled / optimized / DLL files ──────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ── Virtual environments ────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── OS / editor junk ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── Streamlit ────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Hugging Face / model artifacts ───────────────────────────────────────
+# The trained classifier weights are hosted on Hugging Face Hub at:
+#   https://huggingface.co/rajvishwakarmaNIT/disaster-message-classifier
+# Run `python scripts/download_model.py` after cloning to fetch them into
+# this exact folder. Only this subfolder is ignored -- class_map.json,
+# which lives one level up in Disaster_Prediction/models/, is small and
+# project-specific, so it stays tracked in git.
+Disaster_Prediction/models/multi_class_disaster_model/
+
+# ── Large data files (optional -- uncomment if your CSVs are big) ────────
+# Datasets/*.csv
